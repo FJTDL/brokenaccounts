@@ -1,0 +1,11 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="center">
+  {% for score in scores %}
+  {{ score.user }} -- {{ score.subject }} -- {{ score.score }} <br>
+  {% endfor %}
+</div>
+
+{% endblock %}
